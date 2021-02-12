@@ -32,7 +32,7 @@ function multiply(a, b) {
   let multp=a*b;
   return [a*b , 'The product of '+ a+ ' and ' +b+ ' is '+multp +'.'];
 }
-// multiply();
+
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
 
@@ -84,7 +84,7 @@ return[add,testArray+ ' was passed in as an array of numbers, and '+add+ ' is th
 
 testSumArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+// Once you get the test passing, do an a-sc-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
 /* Problem 5
@@ -97,14 +97,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-// let testArray=[2,3,4];
-function multiplyArray(numbers) {
+function multiplyArray(multArr) {
   // //eslint-disable-line
-  // let add = sum (sum(testArray[0],testArray[1])[0],testArray[2])[0];
-  // return[add,' The numbers '+testArray+' have a product of '+add+'.'];
+  let mult = multiply(multiply(testArray[0],testArray[1])[0],testArray[2])[0];
+  return[mult,'The numbers '+testArray+' have a product of '+mult+'.'];
 }
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(numbers);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
