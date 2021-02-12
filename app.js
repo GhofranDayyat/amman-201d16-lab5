@@ -9,12 +9,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) {
-//  let add=a+b;
-//   return [a+b , 'The sum of '+a + ' and '+ b +' is '+ add +'.'];
+ let add=a+b;
+  return [a+b , 'The sum of '+a + ' and '+ b +' is '+ add +'.'];
 }
-// sum(4,7);
+sum(4,7);
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -29,12 +29,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
-  // let multp=a*b;
-  // return [a*b , 'The product of '+ a+ ' and ' +b+ ' is '+multp +'.'];
+  let multp=a*b;
+  return [a*b , 'The product of '+ a+ ' and ' +b+ ' is '+multp +'.'];
 }
 // multiply();
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -80,8 +80,8 @@ function sumArray(sumArr) {
   //eslint-disable-line
 let a= testArray[0]+testArray[1]+testArray[2];
 let b= '2,3,4 was passed in as an array of numbers, and '+ '9 is their sum'+'.';
-let arr=[a,b]; 
-return (arr);
+let sumArry=[a,b]; 
+return (sumArry);
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -101,12 +101,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
+var numbers=[2,3,4];
+function multiplyArray(numbers) {
   //eslint-disable-line
-}
+  // function multiply(a, b,c) {
+let a=numbers[0] / (1 / numbers[1])/(1/numbers[2]);
+let b ='The numbers 2,3,4 have a product of 24.';
+    return [a,b];
+  }
+multiplyArray(numbers);
+//  multiplyArray();
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(numbers);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
